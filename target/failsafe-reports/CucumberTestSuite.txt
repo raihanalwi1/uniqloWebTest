@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 21.159 s <<< FAILURE! - in CucumberTestSuite
-Baby.Go to baby page  Time elapsed: 17.554 s  <<< ERROR!
-org.openqa.selenium.InvalidElementStateException: 
-invalid element state
-  (Session info: MicrosoftEdge=111.0.1661.62)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-3MAQDS2', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d4750a2600c9d3c9f4ec99d8f7bea6dd, clearElement {id=19e92ab4-c3f8-41f9-acf0-5b1402f03918}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:54171}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\alwi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54171/devtoo..., se:cdpVersion: 111.0.1661.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (d4750a2600c9d3c9f4ec99d8f7bea6dd)] -> xpath: //span[text()[contains(.,'BAYI')]]]
-Session ID: d4750a2600c9d3c9f4ec99d8f7bea6dd
-
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 267.103 s - in CucumberTestSuite
