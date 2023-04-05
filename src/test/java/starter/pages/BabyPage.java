@@ -15,6 +15,43 @@ public class BabyPage extends PageObject {
     private By txtPakaianNewborn(){
         return By.xpath("(//span[text()[contains(.,'Pakaian Newborn')]])[2]");
     }
+    private By txtAksesoris1(){
+        return By.xpath("(//span[text()[contains(.,'Aksesoris')]])[7]");
+    }
+    private By txtKoleksiNewborn(){
+        return By.xpath("(//span[text()[contains(.,'Koleksi Newborn')]])[2]");
+    }
+    private By txtLuaran1(){
+        return By.xpath("(//span[text()[contains(.,'Luaran')]])[6]");
+    }
+    private By txtOnepiece(){
+        return By.xpath("(//span[text()[contains(.,'One Piece')]])[2]");
+    }
+    private By txtAtasan1(){
+        return By.xpath("(//span[text()[contains(.,'Atasan')]])[7]");
+    }
+    private By txtBajuTerusan(){
+        return By.xpath("(//span[text()[contains(.,'Baju Terusan')]])[2]");
+    }
+    private By txtLegging(){
+        return By.xpath("(//span[text()[contains(.,'Legging')]])[6]");
+    }
+    private By txtUT1(){
+        return By.xpath("(//span[text()[contains(.,'UT(Graphic T-Shirt)')]])[6]");
+    }
+    private By txtGaun1(){
+        return By.xpath("(//span[text()[contains(.,'Gaun')]])[5]");
+    }
+    private By txtAirism1(){
+        return By.xpath("(//span[text()[contains(.,'AIRism')]])[6]");
+    }
+    private By txtKaosKaki1(){
+        return By.xpath("(//span[text()[contains(.,'Kaos Kaki')]])[6]");
+    }
+    private By txtAksesoris2(){
+        return By.xpath("(//span[text()[contains(.,'Aksesoris')]])[7]");
+    }
+
     private By headerBaby(){
         return By.xpath("//span[text()[contains(.,'BAYI')]]");
     }
@@ -140,7 +177,7 @@ public class BabyPage extends PageObject {
     public void ClickAksesorisMenu2(){
         $(aksesorisMenu2()).click();
     }
-    public void ClickKoleksiBalitMenu(){
+    public void ClickKoleksiBalitaMenu(){
         $(koleksiBalitaMenu()).click();
     }
     public void ClickAtasanMenu2(){

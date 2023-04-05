@@ -54,7 +54,32 @@ public class BabyStep {
             bp.ClickKaosKakiMenu1();
         }else if (page.equals("aksesoris2")){
             bp.ClickAksesorisMenu2();
+        }else if (page.equals("koleksiBalita")){
+            bp.ClickKoleksiBalitaMenu();
+        }else if (page.equals("atasan2")){
+            bp.ClickAtasanMenu2();
+        }else if (page.equals("luaran2")){
+            bp.ClickLuaranMenu2();
+        }else if (page.equals("bawahan")){
+            bp.ClickBawahanMenu();
+        }else if (page.equals("piyama")) {
+            bp.ClickPiyamaMenu();
+        }else if (page.equals("gaun2")){
+            bp.ClickGaunMenu2();
+        }else if (page.equals("UT2")){
+            bp.ClickUTMenu2();
+        }else if (page.equals("heattech")){
+            bp.ClickHeattechMenu();
+        }else if (page.equals("dalamanAtas")){
+            bp.ClickDalamanAtasMenu();
+        }else if(page.equals("airism2")){
+            bp.ClickAirismMenu2();
+        }else if(page.equals("kaosKaki2")){
+            bp.ClickKaosKakiMenu2();
+        }else if(page.equals("aksesoris3")){
+            bp.ClickAksesorisMenu3();
         }
+
     }
 
     @And("I {string} page")

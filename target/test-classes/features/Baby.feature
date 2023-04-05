@@ -91,16 +91,28 @@ Feature: Baby
     Examples:
     | page            | validate  |
     | babyPage        | bayi      |
-    | pakaianNewborn1 |           |
-    | aksesoris1      |           |
-    | koleksiNewborn  |           |
-    | luaran1         |           |
-    | onePiece        |           |
-    | atasan1         |           |
-    | bajuTerusan     |           |
-    | legging         |           |
-    | UT1             |           |
-    | gaun1           |           |
-    | Airism1         |           |
-    | kaosKaki1       |           |
-    | aksesoris2      |           |
+    | pakaianNewborn1 | txtPN1    |
+    | aksesoris1      | txtAksesoris1   |
+    | koleksiNewborn  | txtKoleksiNewborn  |
+    | luaran1         | txtLuaran1  |
+    | onePiece        | txtOnepiece |
+    | atasan1         | txtAtasan1          |
+    | bajuTerusan     | txtBajuTerusan |
+    | legging         | txtLegging |
+    | UT1             | txtUT1 |
+    | gaun1           | txtGaun1 |
+    | Airism1         | txtAirism1 |
+    | kaosKaki1       | txtKaosKaki1 |
+    | aksesoris2      | txtAksesoris2 |
+    | koleksiBalita   |               |
+    | atasan2         |               |
+    | luaran2         |               |
+    | bawahan         |               |
+    | piyama          |               |
+    | gaun2           |               |
+    | UT2             |               |
+    | heattech        |               |
+    | dalamanAtas     |               |
+    | airism2         |               |
+    | kaosKaki2       |               |
+    | aksesoris3      |               |
