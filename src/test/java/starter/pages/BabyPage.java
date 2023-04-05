@@ -9,13 +9,17 @@ public class BabyPage extends PageObject {
     }
     //fungsi selector
 
-    private By headerBaby(){
-        return By.xpath("//span[text()[contains(.,'BAYI')]]");
-    }
     private By headerTextHalaman(){
         return By.xpath("//span[text()[contains(.,'BABY')]]");
     }
-    private By pakaianNewboarnMenu1(){
+    private By txtPakaianNewborn(){
+        return By.xpath("(//span[text()[contains(.,'Pakaian Newborn')]])[2]");
+    }
+    private By headerBaby(){
+        return By.xpath("//span[text()[contains(.,'BAYI')]]");
+    }
+
+    private By pakaianNewbornMenu1(){
         return By.xpath("//span[@class='inner'][text()[contains(.,'Pakaian Newborn')]]");
     }
     private By aksesorisMenu1(){
@@ -54,6 +58,42 @@ public class BabyPage extends PageObject {
     private By aksesorisMenu2(){
         return By.xpath("(//span[@class='inner'][text()[contains(.,'Aksesoris')]])[2]");
     }
+    private By koleksiBalitaMenu(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'Koleksi Balita')]])");
+    }
+    private By atasanMenu2(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'Atasan')]])[2]");
+    }
+    private By luaranMenu2(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'Luaran')]])[2]");
+    }
+    private By bawahanMenu(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'Bawahan')]])[1]");
+    }
+    private By piyamaMenu(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'Piyama')]])[1]");
+    }
+    private By gaunMenu2(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'Gaun')]])[2]");
+    }
+    private By utMenu2(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'UT(Graphic T-Shirt)')]])[2]");
+    }
+    private By heattechMenu(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'HEATTECH')]])[1]");
+    }
+    private By dalamanAtasMenu(){
+       return By.xpath("(//span[@class='inner'][text()[contains(.,'Dalaman Atas')]])[1]");
+    }
+    private By airismMenu2(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'AIRism')]])[2]");
+    }
+    private By kaosKakiMenu2(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'Kaos Kaki')]])[2]");
+    }
+    private By aksesorisMenu3(){
+        return By.xpath("(//span[@class='inner'][text()[contains(.,'Aksesoris')]])[3]");
+    }
     //fungsi public
     public void ClickHeaderMenuBaby(){
         $(headerBaby()).click();
@@ -61,8 +101,8 @@ public class BabyPage extends PageObject {
     public void HeaderTextHalamanDisplay(){
         $(headerTextHalaman()).isDisplayed();
     }
-    public void ClickMenuPakaianNewboarn1(){
-        $(pakaianNewboarnMenu1()).click();
+    public void ClickMenuPakaianNewborn1(){
+        $(pakaianNewbornMenu1()).click();
     }
     public void ClickAksesorisMenu1(){
         $(aksesorisMenu1()).click();
@@ -91,7 +131,7 @@ public class BabyPage extends PageObject {
     public void ClickGaunMenu1(){
         $(gaunMenu1()).click();
     }
-    public void ClickAirsmMenu1(){
+    public void ClickAirismMenu1(){
         $(airismMenu1()).click();
     }
     public void ClickKaosKakiMenu1(){
@@ -99,5 +139,45 @@ public class BabyPage extends PageObject {
     }
     public void ClickAksesorisMenu2(){
         $(aksesorisMenu2()).click();
+    }
+    public void ClickKoleksiBalitMenu(){
+        $(koleksiBalitaMenu()).click();
+    }
+    public void ClickAtasanMenu2(){
+        $(atasanMenu2()).click();
+    }
+    public void ClickLuaranMenu2(){
+        $(luaranMenu2()).click();
+    }
+    public void ClickBawahanMenu(){
+        $(bawahanMenu()).click();
+    }
+    public void ClickPiyamaMenu(){
+        $(piyamaMenu()).click();
+    }
+    public void ClickGaunMenu2(){
+        $(gaunMenu2()).click();
+    }
+    public void ClickUTMenu2(){
+        $(utMenu2()).click();
+    }
+    public void ClickHeattechMenu(){
+        $(heattechMenu()).click();
+    }
+    public void ClickDalamanAtasMenu(){
+        $(dalamanAtasMenu()).click();
+    }
+    public void ClickAirismMenu2(){
+        $(airismMenu2()).click();
+    }
+    public void ClickKaosKakiMenu2(){
+        $(kaosKakiMenu2()).click();
+    }
+    public void ClickAksesorisMenu3(){
+        $(aksesorisMenu3()).click();
+    }
+    //validate
+    public void ValidateTxtPakaianNewborn(){
+        $(txtPakaianNewborn()).isDisplayed();
     }
 }

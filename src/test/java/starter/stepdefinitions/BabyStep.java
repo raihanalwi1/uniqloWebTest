@@ -24,75 +24,46 @@ public class BabyStep {
         
     }
 
-
-    @When("I will go to baby page")
-    public void iWillGoToBabyPage() {
-        bp.HeaderTextHalamanDisplay();
+    @When("I will go to {string}")
+    public void iWillGoTo(String page) {
+        if (page.equals("babyPage")){
+            bp.HeaderTextHalamanDisplay();
+        }else if(page.equals("pakaianNewborn1")){
+            bp.ClickMenuPakaianNewborn1();
+        }else if (page.equals("aksesoris1")){
+            bp.ClickAksesorisMenu1();
+        }else if (page.equals("koleksiNewborn")){
+            bp.ClickKoleksiNewbornMenu();
+        }else if (page.equals("luaran1")){
+            bp.ClickLuaranMenu1();
+        }else if (page.equals("onePiece")){
+            bp.ClickOnePieceMenu();
+        }else if (page.equals("atasan1")){
+            bp.ClickAtasanMenu1();
+        }else if (page.equals("bajuTerusan")){
+            bp.ClickBajuTerusanMenu();
+        }else if (page.equals("legging")){
+            bp.ClickLeggingMenu();
+        }else if (page.equals("UT1")){
+            bp.ClickUTMenu1();
+        }else if (page.equals("gaun1")){
+            bp.ClickGaunMenu1();
+        }else if (page.equals("Airism1")){
+            bp.ClickAirismMenu1();
+        }else if (page.equals("kaosKaki1")){
+            bp.ClickKaosKakiMenu1();
+        }else if (page.equals("aksesoris2")){
+            bp.ClickAksesorisMenu2();
+        }
     }
 
-
-    @When("I will go to pakaian newboarn bayi")
-    public void iWillGoToPakaianNewboarnBayi() {
-        bp.ClickMenuPakaianNewboarn1();
+    @And("I {string} page")
+    public void iPage(String validate) {
+        if (validate.equals("bayi")){
+            bp.HeaderTextHalamanDisplay();
+        }else if (validate.equals("txtPN1")){
+            bp.ValidateTxtPakaianNewborn();
+        }
     }
 
-    @When("I will go to aksesoris bayi satu")
-    public void iWillGoToAksesorisBayiSatu() {
-        bp.ClickAksesorisMenu1();
-    }
-
-    @When("I will go to koleksi newborn")
-    public void iWillGoToKoleksiNewborn() {
-        bp.ClickKoleksiNewbornMenu();
-    }
-
-    @When("I will go to luaran {int}")
-    public void iWillGoToLuaran(int arg0) {
-        bp.ClickLuaranMenu1();
-    }
-
-    @When("I will go to one piece")
-    public void iWillGoToOnePiece() {
-        bp.ClickOnePieceMenu();
-    }
-
-    @When("I will go to atasan {int}")
-    public void iWillGoToAtasan(int arg0) {
-        bp.ClickAtasanMenu1();
-    }
-
-    @When("I will go to baju terusan")
-    public void iWillGoToBajuTerusan() {
-        bp.ClickBajuTerusanMenu();
-    }
-
-    @When("I will go to legging")
-    public void iWillGoToLegging() {
-        bp.ClickLeggingMenu();
-    }
-
-    @When("I will go to ut {int}")
-    public void iWillGoToUt(int arg0) {
-        bp.ClickUTMenu1();
-    }
-
-    @When("I will go to gaun {int}")
-    public void iWillGoToGaun(int arg0) {
-        bp.ClickGaunMenu1();
-    }
-
-    @When("I will go to airism {int}")
-    public void iWillGoToAirism(int arg0) {
-        bp.ClickAirsmMenu1();
-    }
-
-    @When("I will go to kaos kaki {int}")
-    public void iWillGoToKaosKaki(int arg0) {
-        bp.ClickKaosKakiMenu1();
-    }
-
-    @When("I will go to aksesoris bayi dua")
-    public void iWillGoToAksesorisBayiDua() {
-        bp.ClickAksesorisMenu2();
-    }
 }

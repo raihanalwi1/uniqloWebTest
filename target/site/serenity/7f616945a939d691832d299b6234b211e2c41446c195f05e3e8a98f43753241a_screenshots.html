@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="b37258792d6def7e504b81bc883916cb1c87a6229b7aeacd0a78e3314b2df569.html">Baby</a></span>
+                > <span class="truncate-60"><a
+                    href="7f616945a939d691832d299b6234b211e2c41446c195f05e3e8a98f43753241a.html">Fitur Menu Baby </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 05-04-2023 15:36</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Baby </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br />
+I want to access baby page<br />
+So I can view product baby
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Fitur Menu Baby
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I am on the home page<br>Then I click baby on the header<br>When I will go to "&lt;page&gt;"<br>And I "&lt;validate&gt;" page</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 1: Fitur Menu Baby ({page=babyPage, validate=bayi})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="d21d60ba8c736db7b23036f8c9f853b1ee5ade3706640ac4710b5025e8587e9f.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="d21d60ba8c736db7b23036f8c9f853b1ee5ade3706640ac4710b5025e8587e9f.png" title=" When I will go to &quot;babyPage&quot;" width="752"/>
+                <img src="66be97047e6167e11dbe91b68e4a22e675d657e3f92a8c80afba8fee62bd5186.png" title=" When I will go to &quot;babyPage&quot; (completed)" width="752"/>
+                <img src="66be97047e6167e11dbe91b68e4a22e675d657e3f92a8c80afba8fee62bd5186.png" title=" And I &quot;bayi&quot; page" width="752"/>
+                <img src="66be97047e6167e11dbe91b68e4a22e675d657e3f92a8c80afba8fee62bd5186.png" title=" And I &quot;bayi&quot; page (completed)" width="752"/>
+                <img src="66be97047e6167e11dbe91b68e4a22e675d657e3f92a8c80afba8fee62bd5186.png" title=" 1: Fitur Menu Baby ({page=babyPage, validate=bayi}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 2: Fitur Menu Baby ({page=pakaianNewborn1, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="66be97047e6167e11dbe91b68e4a22e675d657e3f92a8c80afba8fee62bd5186.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="c157384d1af7a1d4d702f4446bc7b240acfd77b5953a7f135e6cf3268e96d866.png" title=" When I will go to &quot;pakaianNewborn1&quot;" width="752"/>
+                <img src="c157384d1af7a1d4d702f4446bc7b240acfd77b5953a7f135e6cf3268e96d866.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="c157384d1af7a1d4d702f4446bc7b240acfd77b5953a7f135e6cf3268e96d866.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="c157384d1af7a1d4d702f4446bc7b240acfd77b5953a7f135e6cf3268e96d866.png" title=" 2: Fitur Menu Baby ({page=pakaianNewborn1, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 3: Fitur Menu Baby ({page=aksesoris1, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="c6e6a5faa1ae9ae5d5ce542b2cba9b1cd642da9e91eee3cadfbb4f9ca72324a1.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="c6e6a5faa1ae9ae5d5ce542b2cba9b1cd642da9e91eee3cadfbb4f9ca72324a1.png" title=" When I will go to &quot;aksesoris1&quot;" width="752"/>
+                <img src="43adf71b66d9ec3549af6eaf2bec49c97ce3097d10d4689d7929d97f02f4fc4a.png" title=" When I will go to &quot;aksesoris1&quot; (completed)" width="752"/>
+                <img src="43adf71b66d9ec3549af6eaf2bec49c97ce3097d10d4689d7929d97f02f4fc4a.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="43adf71b66d9ec3549af6eaf2bec49c97ce3097d10d4689d7929d97f02f4fc4a.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="43adf71b66d9ec3549af6eaf2bec49c97ce3097d10d4689d7929d97f02f4fc4a.png" title=" 3: Fitur Menu Baby ({page=aksesoris1, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 4: Fitur Menu Baby ({page=koleksiNewborn, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="585681ad0276587eea986df18185b9b817e38dbab4a67acb7d855325cd06f6fa.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="585681ad0276587eea986df18185b9b817e38dbab4a67acb7d855325cd06f6fa.png" title=" When I will go to &quot;koleksiNewborn&quot;" width="752"/>
+                <img src="bc6b1b7418909f9fe905ceb41af3e9f9f814bbf13ae4efab34704452ea01df62.png" title=" When I will go to &quot;koleksiNewborn&quot; (completed)" width="752"/>
+                <img src="bc6b1b7418909f9fe905ceb41af3e9f9f814bbf13ae4efab34704452ea01df62.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="bc6b1b7418909f9fe905ceb41af3e9f9f814bbf13ae4efab34704452ea01df62.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="bc6b1b7418909f9fe905ceb41af3e9f9f814bbf13ae4efab34704452ea01df62.png" title=" 4: Fitur Menu Baby ({page=koleksiNewborn, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 5: Fitur Menu Baby ({page=luaran1, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="0be983da6af67cf6610257f6939cb093aa0bb702c0e247bbd92a0fb853a68a36.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="0be983da6af67cf6610257f6939cb093aa0bb702c0e247bbd92a0fb853a68a36.png" title=" When I will go to &quot;luaran1&quot;" width="752"/>
+                <img src="f216256068c9a7f96cdd1d93a8439e43b980d023bc94c77f315ca34bb7d65399.png" title=" When I will go to &quot;luaran1&quot; (completed)" width="752"/>
+                <img src="f216256068c9a7f96cdd1d93a8439e43b980d023bc94c77f315ca34bb7d65399.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="f216256068c9a7f96cdd1d93a8439e43b980d023bc94c77f315ca34bb7d65399.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="f216256068c9a7f96cdd1d93a8439e43b980d023bc94c77f315ca34bb7d65399.png" title=" 5: Fitur Menu Baby ({page=luaran1, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 6: Fitur Menu Baby ({page=onePiece, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="585681ad0276587eea986df18185b9b817e38dbab4a67acb7d855325cd06f6fa.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="585681ad0276587eea986df18185b9b817e38dbab4a67acb7d855325cd06f6fa.png" title=" When I will go to &quot;onePiece&quot;" width="752"/>
+                <img src="cbb5bb345919d8edd06814faea2b4e9c06b2d2bda88d3cb2eb3680d07d6b8364.png" title=" When I will go to &quot;onePiece&quot; (completed)" width="752"/>
+                <img src="cbb5bb345919d8edd06814faea2b4e9c06b2d2bda88d3cb2eb3680d07d6b8364.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="cbb5bb345919d8edd06814faea2b4e9c06b2d2bda88d3cb2eb3680d07d6b8364.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="cbb5bb345919d8edd06814faea2b4e9c06b2d2bda88d3cb2eb3680d07d6b8364.png" title=" 6: Fitur Menu Baby ({page=onePiece, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 7: Fitur Menu Baby ({page=atasan1, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="3a273f3c0819d06a49a8033105547a0d89e3f44c0aa6a8d59110359dffc7ae9c.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="3a273f3c0819d06a49a8033105547a0d89e3f44c0aa6a8d59110359dffc7ae9c.png" title=" When I will go to &quot;atasan1&quot;" width="752"/>
+                <img src="be600888aa53c70fcdf70bcdc0c1d40a01b34d934e359b42c612517513901e54.png" title=" When I will go to &quot;atasan1&quot; (completed)" width="752"/>
+                <img src="be600888aa53c70fcdf70bcdc0c1d40a01b34d934e359b42c612517513901e54.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="be600888aa53c70fcdf70bcdc0c1d40a01b34d934e359b42c612517513901e54.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="be600888aa53c70fcdf70bcdc0c1d40a01b34d934e359b42c612517513901e54.png" title=" 7: Fitur Menu Baby ({page=atasan1, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 8: Fitur Menu Baby ({page=bajuTerusan, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="1a95740109cc0b80154a75db76c87493e9da4c678031f12d684473d711071284.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="1a95740109cc0b80154a75db76c87493e9da4c678031f12d684473d711071284.png" title=" When I will go to &quot;bajuTerusan&quot;" width="752"/>
+                <img src="3653a131615d72d62c233819296292854880a55cc95e47c31da9ce4d18c54171.png" title=" When I will go to &quot;bajuTerusan&quot; (completed)" width="752"/>
+                <img src="3653a131615d72d62c233819296292854880a55cc95e47c31da9ce4d18c54171.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="3653a131615d72d62c233819296292854880a55cc95e47c31da9ce4d18c54171.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="3653a131615d72d62c233819296292854880a55cc95e47c31da9ce4d18c54171.png" title=" 8: Fitur Menu Baby ({page=bajuTerusan, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 9: Fitur Menu Baby ({page=legging, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="585681ad0276587eea986df18185b9b817e38dbab4a67acb7d855325cd06f6fa.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="585681ad0276587eea986df18185b9b817e38dbab4a67acb7d855325cd06f6fa.png" title=" When I will go to &quot;legging&quot;" width="752"/>
+                <img src="25bef91c87fc62cdbf6e6031b2341f5a5804d43a23745c17e31d0342e1d06f65.png" title=" When I will go to &quot;legging&quot; (completed)" width="752"/>
+                <img src="25bef91c87fc62cdbf6e6031b2341f5a5804d43a23745c17e31d0342e1d06f65.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="25bef91c87fc62cdbf6e6031b2341f5a5804d43a23745c17e31d0342e1d06f65.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="25bef91c87fc62cdbf6e6031b2341f5a5804d43a23745c17e31d0342e1d06f65.png" title=" 9: Fitur Menu Baby ({page=legging, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 10: Fitur Menu Baby ({page=UT1, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="f15f9ec8de765ea6b20677aec7a84414e08ebc9ec4cc93cd6b41479801f322bd.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="f15f9ec8de765ea6b20677aec7a84414e08ebc9ec4cc93cd6b41479801f322bd.png" title=" When I will go to &quot;UT1&quot;" width="752"/>
+                <img src="8f6919a8c1ebd664e20196300f7eb4ab87b75ce1e9e0e7c6272edb20cae2bd51.png" title=" When I will go to &quot;UT1&quot; (completed)" width="752"/>
+                <img src="8f6919a8c1ebd664e20196300f7eb4ab87b75ce1e9e0e7c6272edb20cae2bd51.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="8f6919a8c1ebd664e20196300f7eb4ab87b75ce1e9e0e7c6272edb20cae2bd51.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="8f6919a8c1ebd664e20196300f7eb4ab87b75ce1e9e0e7c6272edb20cae2bd51.png" title=" 10: Fitur Menu Baby ({page=UT1, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 11: Fitur Menu Baby ({page=gaun1, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="240d29e32a8aca49fa47fb151469afbe5d32df07757be90f66df4bb81bfc9185.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="240d29e32a8aca49fa47fb151469afbe5d32df07757be90f66df4bb81bfc9185.png" title=" When I will go to &quot;gaun1&quot;" width="752"/>
+                <img src="9f2d655c43646768a2526bda42408276bc520d1c1d69c9202f0560575469ccc4.png" title=" When I will go to &quot;gaun1&quot; (completed)" width="752"/>
+                <img src="9f2d655c43646768a2526bda42408276bc520d1c1d69c9202f0560575469ccc4.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="9f2d655c43646768a2526bda42408276bc520d1c1d69c9202f0560575469ccc4.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="9f2d655c43646768a2526bda42408276bc520d1c1d69c9202f0560575469ccc4.png" title=" 11: Fitur Menu Baby ({page=gaun1, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 12: Fitur Menu Baby ({page=Airism1, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="37af101072e9b6e41a69d45ddf2749772f130971aca673c38d9b6e7ce4577d51.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="37af101072e9b6e41a69d45ddf2749772f130971aca673c38d9b6e7ce4577d51.png" title=" When I will go to &quot;Airism1&quot;" width="752"/>
+                <img src="77115cf5b0d9ebfe269b7ade4c5b6c9380b319f770a6cd105d6beaea493ff8eb.png" title=" When I will go to &quot;Airism1&quot; (completed)" width="752"/>
+                <img src="77115cf5b0d9ebfe269b7ade4c5b6c9380b319f770a6cd105d6beaea493ff8eb.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="77115cf5b0d9ebfe269b7ade4c5b6c9380b319f770a6cd105d6beaea493ff8eb.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="77115cf5b0d9ebfe269b7ade4c5b6c9380b319f770a6cd105d6beaea493ff8eb.png" title=" 12: Fitur Menu Baby ({page=Airism1, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 13: Fitur Menu Baby ({page=kaosKaki1, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="c506e79ca16b9af1844495a937f01dd40ed7a8070ccf016aa43be679424f3025.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="c506e79ca16b9af1844495a937f01dd40ed7a8070ccf016aa43be679424f3025.png" title=" When I will go to &quot;kaosKaki1&quot;" width="752"/>
+                <img src="2ffb1a0dd088acc46d2c4884f69dd2d9eadb789ce1ce04935839e41ea6a28698.png" title=" When I will go to &quot;kaosKaki1&quot; (completed)" width="752"/>
+                <img src="2ffb1a0dd088acc46d2c4884f69dd2d9eadb789ce1ce04935839e41ea6a28698.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="2ffb1a0dd088acc46d2c4884f69dd2d9eadb789ce1ce04935839e41ea6a28698.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="2ffb1a0dd088acc46d2c4884f69dd2d9eadb789ce1ce04935839e41ea6a28698.png" title=" 13: Fitur Menu Baby ({page=kaosKaki1, validate=}) (completed)" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" 14: Fitur Menu Baby ({page=aksesoris2, validate=})" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Given I am on the home page" width="752"/>
+                <img src="3d1b19ad31921c0beae4332facd941fcc81467ad5802877977ec6c100df601ce.png" title=" Then I click baby on the header" width="752"/>
+                <img src="66be97047e6167e11dbe91b68e4a22e675d657e3f92a8c80afba8fee62bd5186.png" title=" Then I click baby on the header (completed)" width="752"/>
+                <img src="66be97047e6167e11dbe91b68e4a22e675d657e3f92a8c80afba8fee62bd5186.png" title=" When I will go to &quot;aksesoris2&quot;" width="752"/>
+                <img src="cc4f8adf80f27b4ec0420c88e90477eeed4d195e7d39e470076c3eaf51f79f83.png" title=" When I will go to &quot;aksesoris2&quot; (completed)" width="752"/>
+                <img src="cc4f8adf80f27b4ec0420c88e90477eeed4d195e7d39e470076c3eaf51f79f83.png" title=" And I &quot;&quot; page" width="752"/>
+                <img src="cc4f8adf80f27b4ec0420c88e90477eeed4d195e7d39e470076c3eaf51f79f83.png" title=" And I &quot;&quot; page (completed)" width="752"/>
+                <img src="cc4f8adf80f27b4ec0420c88e90477eeed4d195e7d39e470076c3eaf51f79f83.png" title=" 14: Fitur Menu Baby ({page=aksesoris2, validate=}) (completed): <span class='success-color'>SUCCESS</span>" width="752"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>
