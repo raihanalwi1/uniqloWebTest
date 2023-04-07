@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 import starter.pages.BabyPage;
+import starter.pages.auth.LoginPage;
 
 public class BabyStep {
 
@@ -13,9 +14,12 @@ public class BabyStep {
     @Steps
     BabyPage bp;
 
+    @Steps
+    LoginPage lp;
+
     @Given("I am on the home page")
     public void iAmOnTheHomePage() {
-        bp.openUniqlo();
+        lp.openUniqlo();
     }
 
     @Then("I click baby on the header")

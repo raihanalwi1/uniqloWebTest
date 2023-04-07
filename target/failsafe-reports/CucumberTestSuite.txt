@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 26, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 422.965 s <<< FAILURE! - in CucumberTestSuite
-Baby.Fitur Menu Baby #25  Time elapsed: 18.705 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 23.595 s <<< FAILURE! - in CucumberTestSuite
+Authorized.Login user  Time elapsed: 19.777 s  <<< ERROR!
 org.openqa.selenium.ElementNotInteractableException: 
 element not interactable
   (Session info: MicrosoftEdge=111.0.1661.62)
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-3MAQDS2', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [27eaae4267020d3c22df6296d36be3ee, clickElement {id=b4780128-b381-436f-bd1c-bf3985eb7b63}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61999}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\alwi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61999/devtoo..., se:cdpVersion: 111.0.1661.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (27eaae4267020d3c22df6296d36be3ee)] -> xpath: (//span[@class='inner'][text()[contains(.,'Kaos Kaki')]])[2]]
-Session ID: 27eaae4267020d3c22df6296d36be3ee
+Command: [a8734f72e1e09461f12835bdc9f8b3bb, clickElement {id=a8b2044d-1545-4862-acdc-e83019cc74cd}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58580}, msedge: {msedgedriverVersion: 111.0.1661.62 (0a8f453929e6..., userDataDir: C:\Users\alwi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58580/devtoo..., se:cdpVersion: 111.0.1661.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (a8734f72e1e09461f12835bdc9f8b3bb)] -> xpath: //a[@title='Masuk']]
+Session ID: a8734f72e1e09461f12835bdc9f8b3bb
 

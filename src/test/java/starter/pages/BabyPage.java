@@ -4,9 +4,7 @@ import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
 public class BabyPage extends PageObject {
-    public void openUniqlo(){
-        openAt("/");
-    }
+
     //fungsi selector
 
     private By headerTextHalaman(){
