@@ -79,7 +79,6 @@ public class BabyStep {
         }else if(page.equals("aksesoris3")){
             bp.ClickAksesorisMenu3();
         }
-
     }
 
     @And("I {string} page")
@@ -88,6 +87,54 @@ public class BabyStep {
             bp.HeaderTextHalamanDisplay();
         }else if (validate.equals("txtPN1")){
             bp.ValidateTxtPakaianNewborn();
+        }else if (validate.equals("txtAksesoris1")){
+            bp.ValidateTxtAksesoris1();
+        }else if(validate.equals("txtKoleksiNewborn")){
+            bp.ValidateTxtKoleksiNewborn();
+        }else if(validate.equals("txtLuaran1")){
+            bp.ValidateTxtLuaran1();
+        }else if(validate.equals("txtOnePiece")){
+            bp.ValidateTxtOnePiece();
+        }else if(validate.equals("txtAtasan1")){
+            bp.ValidateTxtAtasan1();
+        }else if(validate.equals("txtBajuTerusan")){
+            bp.ValidateTxtBajuTerusan();
+        }else if(validate.equals("txtLegging")){
+            bp.ValidateTxtLegging();
+        }else if (validate.equals("txtUT1")){
+            bp.ValidateTxtUT1();
+        }else if(validate.equals("txtGaun1")){
+            bp.ValidateTxtGaun1();
+        }else if(validate.equals("txtAirism1")){
+            bp.ValidateTxtAirism1();
+        }else if(validate.equals("txtKaosKaki1")){
+            bp.ValidateTxtKaosKaki1();
+        }else if(validate.equals("txtAksesoris2")){
+            bp.ValidateTxtAksesoris2();
+        }else if(validate.equals("txtKoleksiBalita")){
+            bp.ValidateTxtKoleksiBalita();
+        }else if (validate.equals("txtAtasan2")){
+            bp.ValidateTxtAtasan2();
+        }else if(validate.equals("txtLuaran2")){
+            bp.ValidateTxtLuaran2();
+        }else if(validate.equals("txtBawahan2")){
+            bp.ValidateTxtBawahan2();
+        }else if(validate.equals("txtPiyama")){
+            bp.ValidateTxtPiyama();
+        }else if(validate.equals("txtGaun2")){
+            bp.ValidateTxtGaun2();
+        }else if (validate.equals("txtUT2")){
+            bp.ValidateTxtUT2();
+        }else if (validate.equals("txtHeattech")){
+            bp.ValidateTxtHeattech();
+        }else if (validate.equals("txtDalamanAtas")){
+            bp.ValidateTxtDalamanAtas();
+        }else if(validate.equals("txtAirism2")){
+            bp.ValidateTxtAirism2();
+        }else if (validate.equals("txtKaosKaki2")){
+            bp.ValidateTxtKaosKaki2();
+        }else if (validate.equals("txtAksesoris3")){
+            bp.ValidateTxtAksesoris3();
         }
     }
 

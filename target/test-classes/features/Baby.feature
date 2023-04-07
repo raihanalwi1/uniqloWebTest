@@ -104,15 +104,15 @@ Feature: Baby
     | Airism1         | txtAirism1 |
     | kaosKaki1       | txtKaosKaki1 |
     | aksesoris2      | txtAksesoris2 |
-    | koleksiBalita   |               |
-    | atasan2         |               |
-    | luaran2         |               |
-    | bawahan         |               |
-    | piyama          |               |
-    | gaun2           |               |
-    | UT2             |               |
-    | heattech        |               |
-    | dalamanAtas     |               |
-    | airism2         |               |
-    | kaosKaki2       |               |
-    | aksesoris3      |               |
+    | koleksiBalita   | txtKoleksiBalita |
+    | atasan2         | txtAtasan2 |
+    | luaran2         | txtLuaran2 |
+    | bawahan         | txtBawahan2 |
+    | piyama          | txtPiyama |
+    | gaun2           | txtGaun2 |
+    | UT2             | txtUT2 |
+    | heattech        | txtHeattech |
+    | dalamanAtas     | txtDalamanAtas |
+    | airism2         | txtAirism2 |
+    | kaosKaki2       | txtKaosKaki2 |
+    | aksesoris3      | txtAksesoris3 |

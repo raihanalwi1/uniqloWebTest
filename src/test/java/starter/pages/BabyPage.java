@@ -51,7 +51,42 @@ public class BabyPage extends PageObject {
     private By txtAksesoris2(){
         return By.xpath("(//span[text()[contains(.,'Aksesoris')]])[7]");
     }
-
+    private By txtKoleksiBalita(){
+        return By.xpath("(//span[text()[contains(., 'Koleksi Balita')]])[2]");
+    }
+    private By txtAtasan2(){
+        return By.xpath("(//span[text()[contains(., 'Atasan')]])[7]");
+    }
+    private By txtLuaran2(){
+        return By.xpath("(//span[text()[contains(., 'Luaran')]])[6]");
+    }
+    private By txtBawahan2(){
+        return By.xpath("(//span[text()[contains(., 'Bawahan')]])[5]");
+    }
+    private By txtPiyama(){
+        return By.xpath("(//span[text()[contains(., 'Piyama')]])[5]");
+    }
+    private By txtGaun2(){
+        return By.xpath("(//span[text()[contains(., 'Gaun')]])[5]");
+    }
+    private By txtUT2(){
+        return By.xpath("(//span[text()[contains(., 'UT(Graphic T-Shirt)')]])[6]");
+    }
+    private By txtHeattech(){
+        return By.xpath("(//span[text()[contains(., 'HEATTECH')]])[5]");
+    }
+    private By txtDalamanAtas(){
+        return By.xpath("(//span[text()[contains(., 'Dalaman Atas')]])[4]");
+    }
+    private By txtAirism2(){
+        return By.xpath("(//span[text()[contains(., 'AIRism')]])[6]");
+    }
+    private By txtKaosKaki2(){
+        return By.xpath("(//span[text()[contains(., 'Kaos Kaki')]])[6]");
+    }
+    private By txtAksesoris3(){
+        return By.xpath("(//span[text()[contains(., 'Aksesoris')]])[7]");
+    }
     private By headerBaby(){
         return By.xpath("//span[text()[contains(.,'BAYI')]]");
     }
@@ -216,5 +251,77 @@ public class BabyPage extends PageObject {
     //validate
     public void ValidateTxtPakaianNewborn(){
         $(txtPakaianNewborn()).isDisplayed();
+    }
+    public void ValidateTxtAksesoris1(){
+        $(txtAksesoris1()).isDisplayed();
+    }
+    public void ValidateTxtKoleksiNewborn(){
+        $(txtKoleksiNewborn()).isDisplayed();
+    }
+    public void ValidateTxtLuaran1(){
+        $(txtLuaran1()).isDisplayed();
+    }
+    public void ValidateTxtOnePiece(){
+        $(txtOnepiece()).isDisplayed();
+    }
+    public void ValidateTxtAtasan1(){
+        $(txtAtasan1()).isDisplayed();
+    }
+    public void ValidateTxtBajuTerusan(){
+        $(txtBajuTerusan()).isDisplayed();
+    }
+    public void ValidateTxtLegging(){
+        $(txtLegging()).isDisplayed();
+    }
+    public void ValidateTxtUT1(){
+        $(txtUT1()).isDisplayed();
+    }
+    public void ValidateTxtGaun1(){
+        $(txtGaun1()).isDisplayed();
+    }
+    public void ValidateTxtAirism1(){
+        $(txtKaosKaki1()).isDisplayed();
+    }
+    public void ValidateTxtKaosKaki1(){
+        $(txtKaosKaki1()).isDisplayed();
+    }
+    public void ValidateTxtAksesoris2(){
+        $(txtAksesoris2()).isDisplayed();
+    }
+    public void ValidateTxtKoleksiBalita(){
+        $(txtKoleksiBalita()).isDisplayed();
+    }
+    public void ValidateTxtAtasan2(){
+        $(txtAtasan2()).isDisplayed();
+    }
+    public void ValidateTxtLuaran2(){
+        $(txtLuaran2()).isDisplayed();
+    }
+    public void ValidateTxtBawahan2(){
+        $(txtBawahan2()).isDisplayed();
+    }
+    public void ValidateTxtPiyama(){
+        $(txtPiyama()).isDisplayed();
+    }
+    public void ValidateTxtGaun2(){
+        $(txtGaun2()).isDisplayed();
+    }
+    public void ValidateTxtUT2(){
+        $(txtUT2()).isDisplayed();
+    }
+    public void ValidateTxtHeattech(){
+        $(txtHeattech()).isDisplayed();
+    }
+    public void ValidateTxtDalamanAtas(){
+        $(txtDalamanAtas()).isDisplayed();
+    }
+    public void ValidateTxtAirism2(){
+        $(txtAirism2()).isDisplayed();
+    }
+    public void ValidateTxtKaosKaki2(){
+        $(txtKaosKaki2()).isDisplayed();
+    }
+    public void ValidateTxtAksesoris3(){
+        $(txtAksesoris3()).isDisplayed();
     }
 }
