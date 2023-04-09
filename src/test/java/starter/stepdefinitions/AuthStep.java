@@ -18,12 +18,12 @@ public class AuthStep {
 
     @And("I input email")
     public void iInputEmail() {
-        lp.InputAlamatEmail("test@gmail.com");
+        lp.InputAlamatEmail("test1@gmail.com");
     }
 
     @And("I input password")
     public void iInputPassword() {
-        lp.InputKataSandi("test");
+        lp.InputKataSandi("test1");
     }
 
     @And("I click button masuk")

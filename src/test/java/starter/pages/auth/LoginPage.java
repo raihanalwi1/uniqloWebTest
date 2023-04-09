@@ -20,7 +20,7 @@ public class LoginPage extends PageObject {
         return By.xpath("//label[@for='fr-checkbox-1']");
     }
     private By buttonMasuk(){
-        return By.xpath("");
+        return By.xpath("//a[@data-test=\"login-button\"]");
     }
     public void ClickButtonHeaderAccount(){
         $(buttonHeaderAccount()).click();

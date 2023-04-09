@@ -2,7 +2,7 @@ Feature: Baby
   As a user
   I want to access baby page
   So I can view product baby
-
+@baby
   Scenario Outline: Fitur Menu Baby
     Given I am on the home page
     Then I click baby on the header
