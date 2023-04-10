@@ -1,5 +1,7 @@
+starter\pages\wishlist\WishListProductPage.class
 starter\stepdefinitions\BabyStep.class
 CucumberTestSuite.class
 starter\stepdefinitions\AuthStep.class
 starter\pages\auth\LoginPage.class
-starter\pages\BabyPage.class
+starter\stepdefinitions\WishlistProductStep.class
+starter\pages\menu\BabyPage.class

@@ -36,3 +36,10 @@ Feature: Baby
     | airism2         | txtAirism2 |
     | kaosKaki2       | txtKaosKaki2 |
     | aksesoris3      | txtAksesoris3 |
+
+#  @wishlist
+#  Scenario: Wishlist Product
+#    Given I am on the baby page
+#    Then I click button wishlist product
+#    When I validate button active
+#    And The product send to wishlist page

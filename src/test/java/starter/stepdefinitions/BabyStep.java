@@ -5,7 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import starter.pages.BabyPage;
+import starter.pages.menu.BabyPage;
 import starter.pages.auth.LoginPage;
 
 public class BabyStep {
